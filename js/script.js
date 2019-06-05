@@ -80,6 +80,6 @@ const interSearch = () => {
 // }, false)
 
 //sets first view of students
-// showPage(li, 0, 9)
+showPage(li, 0, 9)
 //makes links function
 appendPageLinks(li)
