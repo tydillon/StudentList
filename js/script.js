@@ -53,9 +53,17 @@ const interSearch = () => {
    for (let j = 0; j < li.length; j++) {
       let h3 = li[j].getElementsByTagName('h3')[0];
       let txtValue = h3.textContent || h3.innerText;
+      //If the search bar is blank, this for loop sets the first 10 elements to be visible again
+      if (searcher.value === '') {
+         for (let k = 0; k < li.length; k++) {
+            if (k < 10) {
+               li[k].style.display = "block";
+            } else {
+               li[k].style.display = "none";
+            }}
       //indexOf returns the index of an item in an array. if item is not present, it returns -1. 
       //here I'm asking for the indexOf the thing I typed in the searchbar.
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      } else if (txtValue.toUpperCase().indexOf(filter) > -1) {
          //If the index is greater than -1, display it
          li[j].style.display = "block";
       } else {
@@ -64,20 +72,6 @@ const interSearch = () => {
       }
    }
 }
-
-
-
-// searcher.addEventListener('input', () => {
-//    if (searcher.value === '') {
-//       for (let k = 0; k < li.length; k++) {
-//          if (k < 10) {
-//             li[k].style.display = "block";
-//          } else {
-//             li[k].style.display = "none";
-//          }
-//       }
-//    }
-// }, false)
 
 //sets first view of students
 showPage(li, 0, 9)
