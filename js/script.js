@@ -53,10 +53,10 @@ const interSearch = () => {
    for (let j = 0; j < li.length; j++) {
       let h3 = li[j].getElementsByTagName('h3')[0];
       let txtValue = h3.textContent || h3.innerText;
-      //indexOf returns the index of an item in an array. if not present, it returns -1. 
+      //indexOf returns the index of an item in an array. if item is not present, it returns -1. 
       //here I'm asking for the indexOf the thing I typed in the searchbar.
       if (txtValue.toUpperCase().indexOf(filter) > -1) {
-         //If the index is greater than -1, display as block
+         //If the index is greater than -1, display it
          li[j].style.display = "block";
       } else {
          //if the index is smaller than -1, don't display it.
