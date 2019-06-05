@@ -4,7 +4,7 @@ body{
   color: #222;
 }
 
-.page{
+#page{
   margin: 50px auto;
   width: 70%;
   background-color: #fff;
