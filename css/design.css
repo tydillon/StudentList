@@ -12,10 +12,10 @@ body{
   padding: 50px;
 }
 
-.page-header{
+#page-header{
   margin-bottom: 20px;
 }
-  .page-header h2{
+  #page-header h2{
     float: left;
     font-size: 22px;
     text-transform: uppercase;
@@ -23,18 +23,18 @@ body{
     color: #555;
   }
 
-  .page-header .student-search{
+  #page-header .student-search{
     float: right;
   }
 
-    .page-header .student-search input{
+    #page-header .student-search input{
       border-radius: 5px;
       border: 1px solid #eaeaea;
       padding: 8px 15px;
       font-size: 14px;
     }
 
-    .page-header .student-search button{
+    #page-header .student-search button{
       border-radius: 5px;
       border: 1px solid #eaeaea;
       padding: 8px 15px;
